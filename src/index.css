@@ -60,7 +60,7 @@ h2 {
   line-height: 118%;
   letter-spacing: -0.24px;
   margin: 0 0 8px;
-  
+  color: var(--purple-light);
   @media (max-width: 1024px) {
     font-size: 20px;
   }
@@ -69,5 +69,10 @@ h2 {
 .nine {
   font-family: var(--font-code);
   font-weight: normal;
+  letter-spacing: 3px;
   font-size: 36px;
+  padding-left: 1rem;
+  border-left: 2px solid var(--purple-light);
+  margin-left: 3.5rem;
+  color: var(--purple-light);
 }
