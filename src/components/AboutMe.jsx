@@ -1,5 +1,5 @@
 
-import './LandingPage.css'
+import './Hero.css'
 
 
 const AboutMe = () => {

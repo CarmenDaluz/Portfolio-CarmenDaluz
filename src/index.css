@@ -2,15 +2,15 @@
   :root {
     /*colors*/
     --purple-dark: #4A3A6B;   
-    --purple-light: #C97FD4;  
+    --purple-light: #a47dab;  
     --pink: #f4aaff;           
-    --mint: #c5f0ff;           
-    --white: #FFFFFF;
+    --blue: #0ba7bc;           
+    --cream: #f7f0e7;
     
     /*fonts*/
-    --font-heading: "Google Sans Code", sans-serif;
-    --font-bold: "Bowlby One SC", sans-serif;
-    --font-code: 'NineByFiveNBP', monospace;        
+    --font-heading: "Google Sans Code", sans-serif; /*linked*/
+    --font-bold: "Bowlby One SC", sans-serif; /*linked*/
+    --font-code: 'NineByFiveNBP', monospace; /*downloaded*/
   }
 
 @font-face {
@@ -22,8 +22,8 @@
 
 /*BACKGROUND DOTS*/
   body {
-    background-color: #4A3A6B;
-    background-image: radial-gradient(circle, #C97FD4 1px, transparent 1px);
+    background-color: #f7f0e7;
+    background-image: radial-gradient(circle,rgba(201, 127, 212, 0.7) 1px, transparent 1px);
     background-size: 40px 40px;
     animation: moveDots 4s linear infinite;
   }
@@ -33,10 +33,10 @@
     to { background-position: 24px 24px; }
   }
 
-  body {
-    background-color: #FAF7F2;
-  }
 
+
+
+  
 p, h1,
 h2 {
   font-family: var(--font-heading);
@@ -73,6 +73,6 @@ h2 {
   font-size: 36px;
   padding-left: 1rem;
   border-left: 2px solid var(--purple-light);
-  margin-left: 3.5rem;
+  
   color: var(--purple-light);
 }
