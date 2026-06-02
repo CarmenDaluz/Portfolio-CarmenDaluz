@@ -32,10 +32,22 @@ const Hero = () => {
                                 </svg>
                             </div>
                         </button>
-
-                        
                     </Link>
+                    <p>
+                        ### Stack
+                        <img src="" alt="" />
+                        ![React](https://img.shields.io/badge/React-E6F1FB?style=flat&logo=react&logoColor=0C447C)
+                        ![JavaScript](https://img.shields.io/badge/JavaScript-FAEEDA?style=flat&logo=javascript&logoColor=633806)
+                        ![CSS](https://img.shields.io/badge/CSS-EEEDFE?style=flat&logo=css3&logoColor=3C3489)
+                        ![HTML](https://img.shields.io/badge/HTML-FAECE7?style=flat&logo=html5&logoColor=712B13)
+                        ![Node.js](https://img.shields.io/badge/Node.js-EAF3DE?style=flat&logo=node.js&logoColor=27500A)
+                        ![MySQL](https://img.shields.io/badge/MySQL-E6F1FB?style=flat&logo=mysql&logoColor=185FA5)
 
+                        ### Currently
+
+                        Building projects, learning every day, and looking for my first role as a junior frontend developer in Barcelona.
+
+                    </p>
                     <p className="nine typerwriter">  "Good design is good code — and vice versa." </p>
                 </div>
 
