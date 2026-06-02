@@ -8,12 +8,14 @@ const Hero = () => {
 
     return (
         <>
-            <section className="LPcontainer">
-                <div>
-                    <h1 >Hello my name is Carmen!</h1>
+            <section className="heroContainer">
+                <div className='textHeroContainer'>
+                    <h1 >¡Hola! My name is Carmen</h1>
+
                     <h2>FULL-STACK WEB DEVELOPER | Visual Thinker </h2>
                     
                     <p>Developing, learning and designing with code.</p>
+
                     <Link to="/aboutme" className="text-deco-NO">
                         <button class="cssbuttons-io-button">
                         Get started
@@ -33,6 +35,7 @@ const Hero = () => {
                             </div>
                         </button>
                     </Link>
+<<<<<<< Updated upstream
                     <p>
                         ### Stack
                         <img src="" alt="" />
@@ -49,6 +52,12 @@ const Hero = () => {
 
                     </p>
                     <p className="nine typerwriter">  "Good design is good code — and vice versa." </p>
+=======
+                    <div className='terminal'>
+                        <p className="">  Carmen@CHAREN-DEV:~$</p>
+                        <p className="nine typerwriter">    "Good design is good code — and vice versa." </p>
+                    </div>
+>>>>>>> Stashed changes
                 </div>
 
                 <img className='imgCode' src="/codeimg.png" alt="retro window web paint" />
