@@ -1,6 +1,6 @@
 # 🖥️ Portfolio — Carmen Daluz
-
-Bienvenida/o a mi portfolio personal como desarrolladora web frontend. Este proyecto es más que una web de presentación: es un espacio donde la estética y el código se dan la mano.
+![Captura del portfolio](assets/screenshot.png)
+Bienvenida a mi portfolio personal como desarrolladora web frontend. Este proyecto es más que una web de presentación: es un espacio donde la estética y el código se dan la mano.
 
 🔗 **[Ver portfolio en vivo →](https://carmendaluz.netlify.app)**
 
