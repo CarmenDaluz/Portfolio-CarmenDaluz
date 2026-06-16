@@ -1,6 +1,7 @@
 .am-page {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -14,11 +15,8 @@
 
 .am-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
-.am-card--full {
-  grid-column: 1 / -1;
-}
 

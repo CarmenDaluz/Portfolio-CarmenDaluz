@@ -1,0 +1,31 @@
+.pc-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  gap: 1rem;
+}
+
+.projects-img {
+    width: 300px;
+    height: 160px;
+    border: 3px solid var(--purple-light);
+    border-radius: 1rem;
+    &:hover {
+        border: 3px solid var(--blue);
+        box-shadow: 4px 4px 0px var(--blue);
+        
+    }
+    
+}
+.pc-card{
+  background-color: #ffffff;
+  border: 2px solid var(--purple-light);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 4px 4px 0px var(--purple-light);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}

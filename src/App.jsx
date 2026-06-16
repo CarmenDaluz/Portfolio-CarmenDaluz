@@ -6,6 +6,7 @@ import Hero from './components/Hero.jsx'
 import CardsMap from './components/CardsMap.jsx'
 import Header from './components/Header.jsx'
 import AboutMe from './components/AboutMe.jsx'
+import Contact from './pages/Contact/Contact.jsx'
 
 
 
@@ -44,7 +45,7 @@ function App() {
       {/* CONTACT */}
       <Route
         path="/contact"
-        element={<CardsMap/>}
+        element={<Contact/>}
       />
 
     </Routes>

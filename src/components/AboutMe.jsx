@@ -1,65 +1,72 @@
 import './AboutMe.css'
 import Button from '../components/Button/Button'
-import ProjectsCard from '../components/Projects-Card/ProjectsCard'
+import AboutMeCard from './AboutMeCard/AboutMeCard'
 
 
 
 const AboutMe = () => {
-  const stack = ['React', 'JavaScript', 'CSS', 'HTML', 'Node.js', 'Express.js', 'MySQL']
-
+  const stack = ['React', 'JavaScript', 'CSS', 'HTML5', 'Node.js', 'Express.js', 'MySQL', 'Git']
+  const audiovisualSkills = ['Premiere', 'After Effects', 'DaVinci', 'Photoshop', 'Cinema 4D.']
+  const softSkills =['empática', 'colaborativa', 'creativa','responsable', 'curiosa']
 
   return (
 
     <section className="am-page">
-      <h1 className="am-title">About me</h1>
-
-      <Button title='My CV'></Button>
+      <h1 className="am-title">About me :)</h1>
 
       <div className="am-grid">
-        <ProjectsCard 
-          title='De donde vengo'
-          desc1=' Vengo del mundo audiovisual. Durante años trabajé en producción de
-          vídeo, edición, eventos en directo y producciones internacionales.'
-          desc2='Ese entorno me enseñó a trabajar bajo presión, a comunicar ideas
-          visualmente y a entender que los detalles importan.'
+        <AboutMeCard 
+          title='De donde vengo ▼'
+          desc1='Estudié Imagen en una escuela de Cine en Galicia. Durante años trabajé en audiovisual: detrás de la cámara y delante de la pantalla de edición. 
+          Aprendí a ver el mundo de otra manera, el detalle técnico y el resultado visual son inseparables, algo que sigo aplicando desde el código.'
+          desc2=
+            {<ul className="am-stack">
+              {audiovisualSkills.map((tech) => (
+                <li key={tech} className="am-pill">{tech}</li>
+              ))}
+            </ul>}
           
-        ></ProjectsCard>
+        ></AboutMeCard>
         
-        <ProjectsCard 
-          title='Donde estoy ahora'
-          desc1=' Acabo de terminar el bootcamp de desarrollo web de Adalab, donde aprendí a construir aplicaciones full-stack desde cero.'
+        <AboutMeCard 
+          title='Donde estoy ahora ▼
+'
+          desc1='Decidí cambiar del mundo audiovisual al tech, ya que antes solo construía piezas visuales, ahora con código construyo herramientas que resuelven problemas reales. Acabo de terminar un bootcamp de Desarrollo Web donde aprendí fundamentos y a entender la programación. Ahora continúo con mi aprendizaje, con motivación y con espectativas de lo que viene a continuación.'
           desc2= 
             {<ul className="am-stack">
               {stack.map((tech) => (
-                <li key={tech} className="am-badge">{tech}</li>
+                <li key={tech} className="am-pill">{tech}</li>
               ))}
             </ul>}
-        ></ProjectsCard>
+        ></AboutMeCard>
 
-        <ProjectsCard 
-          title='Qué me diferencia'
-          desc1='Tengo un perfil multidisciplinar que combina criterio visual,
-          sensibilidad hacia la experiencia de usuario y capacidad técnica.
-          No solo escribo código que funciona — pienso en cómo se siente
-          usarlo.'
-          desc2=' La empatía que desarrollé trabajando con equipos creativos y
-          clientes me ayuda a entender qué necesita realmente un producto,
-          más allá de los requisitos.'
+        <AboutMeCard 
+          title='Qué me diferencia ▼
+'
+          desc1='Soy una persona multidisciplinar: combino criterio visual, capacidad técnica y muchas ganas de continuar aprendiendo. Mi empatía, actitud colaborativa y mi gran capacidad de concentrarme en mis metas, me ayudan a trabajar bien en equipo y en la dirección correcta.'
+          desc2= {<ul className="am-stack">
+              {softSkills.map((tech) => (
+                <li key={tech} className="am-pill">{tech}</li>
+              ))}
+            </ul>}
           
-        ></ProjectsCard>
+        ></AboutMeCard>
 
-        <ProjectsCard 
-          title='Lo que busco'
-          desc1='Busco un equipo donde los juniors tengan espacio para crecer y
-            equivocarse. Quiero aportar desde el primer día — con curiosidad,
-            con ganas y con todo lo que ya sé — mientras sigo aprendiendo de
+        <AboutMeCard 
+          title='Lo que busco ▼
+'
+          desc1='Busco un equipo donde haya espacio para crecer y
+            equivocarse. Quiero aportar desde el primer día, con curiosidad,
+            con ganas y con todas mis habilidades, mientras sigo aprendiendo de
             personas con más experiencia.'
           desc2=' Me importa trabajar en productos con propósito, en un entorno donde
             la comunicación y el cuidado del detalle sean valores compartidos.'
                   
-        ></ProjectsCard>
-        
+        ></AboutMeCard>
+
       </div>
+      
+      <Button to='/aboutme' title="Let's see my CV"></Button>
     </section>
   
   )

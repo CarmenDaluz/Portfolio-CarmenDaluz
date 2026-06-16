@@ -4,7 +4,8 @@
     --purple-dark: #4A3A6B;   
     --purple-light: #a47dab;  
     --pink: #f4aaff;           
-    --blue: #0ba7bc;           
+    --blue: #26adbe;
+    --blue-dark: #088292;              
     --cream: #f7f0e7;
     
     /*fonts*/
@@ -70,7 +71,6 @@ h2 {
   font-family: var(--font-code);
   font-weight: normal;
   letter-spacing: 3px;
-  font-size: 36px;
-  padding-left: 1rem;
+  font-size: 25px;
   color: var(--purple-light);
 }
