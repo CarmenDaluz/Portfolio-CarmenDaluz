@@ -11,8 +11,10 @@ import './ProjectsCard/ProjectsCard.css'
 function CardsMap () {
   const repos = [
     { name: "HP Searcher", stack: "react, CSS, JavaScript", photo: "/project1.png", description: "Searcher on HP API"},
+
     { name: "Bookstore API", stack: "react, CSS, JavaScript", photo:"/project2.png", description: "Searcher on HP API"} , 
-    { name: "My Portfolio", stack: "react, CSS, JavaScript", photo:"/project3.png", description: "Searcher on HP API"},
+
+    { name: "My Portfolio", stack: "react, CSS, JavaScript", photo:"/project3.png", description: "Searcher on HP API", deploy: 'https://portfolio-carmendaluz.netlify.app/#/projects', github: 'https://github.com/CarmenDaluz/Portfolio-CarmenDaluz'},
 
     
     ]
@@ -31,7 +33,8 @@ function CardsMap () {
               desc1={`Stack: ${repo.stack}`}
               desc2={repo.description}
               photo={repo.photo}
-              
+              deploy={repo.deploy}
+              github={repo.github}
              />
           </div> 
         ))}

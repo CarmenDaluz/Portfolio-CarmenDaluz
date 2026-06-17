@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './ProjectsCard.css'
 import ButtonSmall from '../Button/ButtonSmall'
 
-const ProjectsCard = ({title, desc1, desc2, photo}) => {
+const ProjectsCard = ({title, desc1, desc2, photo, deploy, github}) => {
     const [close, setClose] = useState(false);
 
 
@@ -12,8 +12,8 @@ const ProjectsCard = ({title, desc1, desc2, photo}) => {
             <img src={photo} alt="project photo" className='projects-img'onClick={() => setClose(!close)}/>
             {close && <p>{desc1}</p>}
             {close && <div className='desc2'>{desc2}</div>}
-            {close && <ButtonSmall href='https://github.com/CarmenDaluz' title="Deploy"></ButtonSmall>}
-            {close && <ButtonSmall href='https://github.com/CarmenDaluz' title="Github"></ButtonSmall>}
+            {close && <ButtonSmall href={deploy} title="Deploy"></ButtonSmall>}
+            {close && <ButtonSmall href={github} title="Github"></ButtonSmall>}
             
         </article>
 
